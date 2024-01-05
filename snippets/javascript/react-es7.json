@@ -86,17 +86,17 @@
     "typescriptReactArrowFunctionExportComponent": {
         "prefix": "tsrafce",
         "body": [
-            "import React from 'react'",
+            "import React from \"react\";",
             "",
-            "type Props = {}",
+            "interface I${1:${TM_FILENAME_BASE}} {}",
             "",
-            "const ${1:${TM_FILENAME_BASE}} = (props: Props) => {",
+            "const ${1:${TM_FILENAME_BASE}}: React.FC<I${1:${TM_FILENAME_BASE}}> = () => {",
             "  return (",
             "    <div>${1:first}</div>",
-            "  )",
-            "}",
+            "  );",
+            "};",
             "",
-            "export default ${1:${TM_FILENAME_BASE}}"
+            "export default ${1:${TM_FILENAME_BASE}};"
         ],
         "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface"
     },
